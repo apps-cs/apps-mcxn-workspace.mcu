@@ -1,0 +1,11 @@
+16:59:52 **** Incremental Build of configuration Debug for project frdmmcxn947_smartdma_camera_flexio_mculcd ****
+make -r -j20 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size "frdmmcxn947_smartdma_camera_flexio_mculcd.axf"; # arm-none-eabi-objcopy -v -O binary "frdmmcxn947_smartdma_camera_flexio_mculcd.axf" "frdmmcxn947_smartdma_camera_flexio_mculcd.bin" ; # checksum -p MCXN947 -d "frdmmcxn947_smartdma_camera_flexio_mculcd.bin";
+   text	   data	    bss	    dec	    hex	filename
+  21804	     64	 239180	 261048	  3fbb8	frdmmcxn947_smartdma_camera_flexio_mculcd.axf
+ 
+
+16:59:53 Build Finished. 0 errors, 0 warnings. (took 251ms)
+

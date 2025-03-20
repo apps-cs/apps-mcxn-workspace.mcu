@@ -1,0 +1,5 @@
+/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/test/drivers/fsl_clock.h:1394:20:void CLOCK_EnableClock(clock_ip_name_t)	24	static
+../source/main-test.cpp:36:6:void _mcu_initialization()	8	static
+../source/main-test.cpp:65:5:int main()	8	static
+../source/main-test.cpp:89:1:void __static_initialization_and_destruction_0()	8	static
+../source/main-test.cpp:89:1:cpp)	8	static

@@ -1,0 +1,14 @@
+21:00:54 **** Clean-only build of configuration Debug for project lcd ****
+make -r -j20 clean 
+rm -rf ./utilities/fsl_assert.d ./utilities/fsl_assert.o ./utilities/fsl_debug_console.d ./utilities/fsl_debug_console.o ./utilities/fsl_str.d ./utilities/fsl_str.o
+rm -rf ./startup/boot_multicore_slave.d ./startup/boot_multicore_slave.o ./startup/startup_mcxn947_cm33_core0.d ./startup/startup_mcxn947_cm33_core0.o
+rm -rf ./source/cpp_config.d ./source/cpp_config.o ./source/font8x8.d ./source/font8x8.o ./source/lcd_lib.d ./source/lcd_lib.o ./source/main-lcd.d ./source/main-lcd.o ./source/semihost_hardfault.d ./source/semihost_hardfault.o
+rm -rf ./mcxn-kit/mcxn-kit-delay.d ./mcxn-kit/mcxn-kit-delay.o ./mcxn-kit/mcxn-kit-digital-io.d ./mcxn-kit/mcxn-kit-digital-io.o ./mcxn-kit/mcxn-kit-ticker.d ./mcxn-kit/mcxn-kit-ticker.o
+rm -rf ./drivers/fsl_clock.d ./drivers/fsl_clock.o ./drivers/fsl_common.d ./drivers/fsl_common.o ./drivers/fsl_common_arm.d ./drivers/fsl_common_arm.o ./drivers/fsl_gpio.d ./drivers/fsl_gpio.o ./drivers/fsl_lpflexcomm.d ./drivers/fsl_lpflexcomm.o ./drivers/fsl_lpspi.d ./drivers/fsl_lpspi.o ./drivers/fsl_lpuart.d ./drivers/fsl_lpuart.o ./drivers/fsl_mrt.d ./drivers/fsl_mrt.o ./drivers/fsl_reset.d ./drivers/fsl_reset.o ./drivers/fsl_spc.d ./drivers/fsl_spc.o
+rm -rf ./device/system_MCXN947_cm33_core0.d ./device/system_MCXN947_cm33_core0.o
+rm -rf ./component/uart/fsl_adapter_lpuart.d ./component/uart/fsl_adapter_lpuart.o
+rm -rf ./component/serial_manager/fsl_component_serial_manager.d ./component/serial_manager/fsl_component_serial_manager.o ./component/serial_manager/fsl_component_serial_port_uart.d ./component/serial_manager/fsl_component_serial_port_uart.o
+rm -rf ./component/lists/fsl_component_generic_list.d ./component/lists/fsl_component_generic_list.o
+rm -rf ./board/board.d ./board/board.o ./board/clock_config.d ./board/clock_config.o ./board/peripherals.d ./board/peripherals.o ./board/pin_mux.d ./board/pin_mux.o
+rm -rf lcd.axf
+ 

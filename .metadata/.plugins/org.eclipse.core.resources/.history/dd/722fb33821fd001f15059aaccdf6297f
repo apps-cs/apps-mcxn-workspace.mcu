@@ -1,0 +1,9 @@
+../drivers/fsl_gpio.h:329:20:GPIO_PinWrite	24	static
+../drivers/fsl_gpio.c:117:6:GPIO_PinInit	24	static
+../drivers/fsl_gpio.c:137:6:GPIO_GetVersionInfo	16	static
+../drivers/fsl_gpio.c:177:10:GPIO_GpioGetInterruptFlags	16	static
+../drivers/fsl_gpio.c:191:10:GPIO_GpioGetInterruptChannelFlags	16	static
+../drivers/fsl_gpio.c:204:9:GPIO_PinGetInterruptFlag	16	static
+../drivers/fsl_gpio.c:233:6:GPIO_GpioClearInterruptFlags	16	static
+../drivers/fsl_gpio.c:245:6:GPIO_GpioClearInterruptChannelFlags	24	static
+../drivers/fsl_gpio.c:257:6:GPIO_PinClearInterruptFlag	16	static

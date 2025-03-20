@@ -1,0 +1,44 @@
+board/board.o board/board.d: ../board/board.c \
+ /poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/drivers/fsl_common.h \
+ /poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/device/fsl_device_registers.h \
+ /poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/device/MCXN947_cm33_core0.h \
+ /poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/CMSIS/core_cm33.h \
+ /poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/CMSIS/cmsis_version.h \
+ /poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/CMSIS/cmsis_compiler.h \
+ /poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/CMSIS/cmsis_gcc.h \
+ /poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/CMSIS/mpu_armv8.h \
+ /poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/device/system_MCXN947_cm33_core0.h \
+ /poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/device/MCXN947_cm33_core0_features.h \
+ /poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/drivers/fsl_common_arm.h \
+ /poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/drivers/fsl_clock.h \
+ /poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/drivers/fsl_common.h \
+ /poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/drivers/fsl_reset.h \
+ /poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/utilities/fsl_debug_console.h \
+ /poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/component/serial_manager/fsl_component_serial_manager.h \
+ /poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/component/serial_manager/fsl_component_serial_port_uart.h \
+ /poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/component/uart/fsl_adapter_uart.h \
+ ../board/board.h ../board/clock_config.h \
+ /poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/drivers/fsl_gpio.h \
+ /poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/drivers/fsl_spc.h
+/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/drivers/fsl_common.h:
+/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/device/fsl_device_registers.h:
+/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/device/MCXN947_cm33_core0.h:
+/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/CMSIS/core_cm33.h:
+/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/CMSIS/cmsis_version.h:
+/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/CMSIS/cmsis_compiler.h:
+/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/CMSIS/cmsis_gcc.h:
+/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/CMSIS/mpu_armv8.h:
+/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/device/system_MCXN947_cm33_core0.h:
+/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/device/MCXN947_cm33_core0_features.h:
+/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/drivers/fsl_common_arm.h:
+/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/drivers/fsl_clock.h:
+/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/drivers/fsl_common.h:
+/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/drivers/fsl_reset.h:
+/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/utilities/fsl_debug_console.h:
+/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/component/serial_manager/fsl_component_serial_manager.h:
+/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/component/serial_manager/fsl_component_serial_port_uart.h:
+/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/component/uart/fsl_adapter_uart.h:
+../board/board.h:
+../board/clock_config.h:
+/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/drivers/fsl_gpio.h:
+/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/drivers/fsl_spc.h:

@@ -1,0 +1,1 @@
+source/font8x8.o source/font8x8.d: ../source/font8x8.cpp

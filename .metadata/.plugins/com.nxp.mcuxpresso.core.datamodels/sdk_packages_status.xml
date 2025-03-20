@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdk-packages>
+<package hash="1740557487813" path="/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/MCXN947_LCD/part-support" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
+<package hash="1739993601303" path="/poli/home/mcuxpresso/02/SDKPackages/SDK_2_16_000_FRDM-MCXN947.zip" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
+<package hash="1740557487813" path="/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/leds/part-support" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
+<package hash="1740557487813" path="/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/test/part-support" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
+<package hash="1740557487813" path="/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/MCXN947_APPS/part-support" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
+<package hash="1740557487813" path="/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/part-support" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
+<package hash="1740557487813" path="/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/test-all/part-support" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
+<package hash="1740557487813" path="/poli/home/www/MCXN947_APPS/part-support" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
+</sdk-packages>

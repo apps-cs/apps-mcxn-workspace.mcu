@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;led/source/MCXN947_APPS.cpp&apos; to &apos;main-led.cpp&apos;" description="Rename resource &apos;MCXN947_APPS.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="source/MCXN947_APPS.cpp" name="main-led.cpp" stamp="1741535894046" updateReferences="true"/>
+</session>

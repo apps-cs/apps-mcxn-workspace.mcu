@@ -1,0 +1,6 @@
+/poli/home/www/MCXN947_LCD/drivers/fsl_clock.h:1394:20:void CLOCK_EnableClock(clock_ip_name_t)	24	static
+../source/MCXN947_LCD.cpp:35:6:void _mcu_initialization()	8	static
+../source/MCXN947_LCD.cpp:62:6:void control_from_ticker()	16	static
+../source/MCXN947_LCD.cpp:94:5:int main()	32	static
+../source/MCXN947_LCD.cpp:192:1:void __static_initialization_and_destruction_0()	8	static
+../source/MCXN947_LCD.cpp:192:1:cpp)	8	static

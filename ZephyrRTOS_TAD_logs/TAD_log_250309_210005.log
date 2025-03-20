@@ -1,0 +1,12 @@
+"Task Aware Debugger for GDB" version 24.12.0 (202407110909)
+Copyright 2016-2023 NXP
+==================================
+20:59:06.921 INFO: [ZephyrRTOS] .config file could not be read [/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/test/Debug/.config (No such file or directory)]
+20:59:06.921 INFO: [TadModel] DSF session ID 2 has started.
+20:59:14.111 INFO: [TadState] TAD state changed: DEBUG_STARTED -> DEBUG_INIT_0 (RESUMED, USER_REQUEST)
+20:59:14.124 INFO: [TadState] TAD state changed: DEBUG_INIT_0 -> DEBUG_INIT_1 (SUSPENDED, SIGNAL)
+20:59:14.967 INFO: [TadState] TAD state changed: DEBUG_INIT_1 -> DEBUG_SUSPENDED (RESUMED, USER_REQUEST)
+20:59:14.994 INFO: [TadState] TAD state changed: DEBUG_SUSPENDED -> DEBUG_SUSPENDED (SUSPENDED, BREAKPOINT)
+20:59:25.495 INFO: [TadState] TAD state changed: DEBUG_SUSPENDED -> DEBUG_RESUMED (RESUMED, USER_REQUEST)
+21:00:04.328 INFO: [TadState] TAD state changed: DEBUG_RESUMED -> READY (SUSPENDED, SIGNAL)
+21:00:05.441 INFO: [TadModel] DSF session ID 2 has ended.

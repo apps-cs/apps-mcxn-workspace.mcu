@@ -1,0 +1,40 @@
+mcxn-kit/mcxn-kit-ticker.o mcxn-kit/mcxn-kit-ticker.d: \
+ ../mcxn-kit/mcxn-kit-ticker.cpp \
+ /poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/drivers/fsl_common.h \
+ /poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/device/fsl_device_registers.h \
+ /poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/device/MCXN947_cm33_core0.h \
+ /poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/CMSIS/core_cm33.h \
+ /poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/CMSIS/cmsis_version.h \
+ /poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/CMSIS/cmsis_compiler.h \
+ /poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/CMSIS/cmsis_gcc.h \
+ /poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/CMSIS/mpu_armv8.h \
+ /poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/device/system_MCXN947_cm33_core0.h \
+ /poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/device/MCXN947_cm33_core0_features.h \
+ /poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/drivers/fsl_common_arm.h \
+ /poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/drivers/fsl_clock.h \
+ /poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/drivers/fsl_common.h \
+ /poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/drivers/fsl_reset.h \
+ /poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/drivers/fsl_mrt.h \
+ ../mcxn-kit/mcxn-kit.h ../mcxn-kit/mcxn-kit-pins.h \
+ ../mcxn-kit/mcxn-kit-digital-io.h ../mcxn-kit/mcxn-kit-ticker.h \
+ ../mcxn-kit/mcxn-kit-delay.h
+/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/drivers/fsl_common.h:
+/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/device/fsl_device_registers.h:
+/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/device/MCXN947_cm33_core0.h:
+/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/CMSIS/core_cm33.h:
+/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/CMSIS/cmsis_version.h:
+/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/CMSIS/cmsis_compiler.h:
+/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/CMSIS/cmsis_gcc.h:
+/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/CMSIS/mpu_armv8.h:
+/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/device/system_MCXN947_cm33_core0.h:
+/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/device/MCXN947_cm33_core0_features.h:
+/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/drivers/fsl_common_arm.h:
+/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/drivers/fsl_clock.h:
+/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/drivers/fsl_common.h:
+/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/drivers/fsl_reset.h:
+/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/lcd/drivers/fsl_mrt.h:
+../mcxn-kit/mcxn-kit.h:
+../mcxn-kit/mcxn-kit-pins.h:
+../mcxn-kit/mcxn-kit-digital-io.h:
+../mcxn-kit/mcxn-kit-ticker.h:
+../mcxn-kit/mcxn-kit-delay.h:

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;MCXN947_APPS/source/mcxn-kit-digital-in-out.h&apos; to &apos;mcxn-kit-digital-io.h&apos;" description="Rename resource &apos;mcxn-kit-digital-in-out.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="source/mcxn-kit-digital-in-out.h" name="mcxn-kit-digital-io.h" stamp="1740223715466" updateReferences="true"/>
+</session>

@@ -1,0 +1,17 @@
+/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/test/drivers/fsl_common_arm.h:788:24:DisableGlobalIRQ	16	static
+/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/test/drivers/fsl_common_arm.h:814:20:EnableGlobalIRQ	24	static
+../component/serial_manager/fsl_component_serial_manager.c:426:32:SerialManager_StartWriting	32	static
+../component/serial_manager/fsl_component_serial_manager.c:488:32:SerialManager_StartReading	32	static
+../component/serial_manager/fsl_component_serial_manager.c:1244:32:SerialManager_Write	32	static
+../component/serial_manager/fsl_component_serial_manager.c:1261:32:SerialManager_Read	32	static
+../component/serial_manager/fsl_component_serial_manager.c:1279:25:SerialManager_Init	24	static
+../component/serial_manager/fsl_component_serial_manager.c:1496:25:SerialManager_Deinit	24	static
+../component/serial_manager/fsl_component_serial_manager.c:1575:25:SerialManager_OpenWriteHandle	32	static
+../component/serial_manager/fsl_component_serial_manager.c:1612:25:SerialManager_CloseWriteHandle	32	static
+../component/serial_manager/fsl_component_serial_manager.c:1646:25:SerialManager_OpenReadHandle	32	static
+../component/serial_manager/fsl_component_serial_manager.c:1686:25:SerialManager_CloseReadHandle	32	static
+../component/serial_manager/fsl_component_serial_manager.c:1718:25:SerialManager_WriteBlocking	24	static
+../component/serial_manager/fsl_component_serial_manager.c:1727:25:SerialManager_ReadBlocking	24	static
+../component/serial_manager/fsl_component_serial_manager.c:1974:25:SerialManager_EnterLowpower	24	static
+../component/serial_manager/fsl_component_serial_manager.c:2030:25:SerialManager_ExitLowpower	24	static
+../component/serial_manager/fsl_component_serial_manager.c:2094:6:SerialManager_SetLowpowerCriticalCb	16	static

@@ -1,0 +1,11 @@
+/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/test/drivers/fsl_port.h:360:20:void PORT_SetPinConfig(PORT_Type*, uint32_t, const port_pin_config_t*)	32	static
+/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/test/drivers/fsl_gpio.h:329:20:void GPIO_PinWrite(GPIO_Type*, uint32_t, uint8_t)	24	static
+/poli/home/vyuka/apps/git/apps-workspace.mcu-24.12/test/drivers/fsl_gpio.h:411:24:uint32_t GPIO_PinRead(GPIO_Type*, uint32_t)	16	static
+../mcxn-kit/mcxn-kit-digital-io.cpp:24:1:DigitalBase::DigitalBase(uint32_t, uint32_t)	32	static
+../mcxn-kit/mcxn-kit-digital-io.cpp:87:1:DigitalIn::DigitalIn(uint32_t)	16	static
+../mcxn-kit/mcxn-kit-digital-io.cpp:91:1:DigitalIn::DigitalIn(uint32_t, uint32_t)	24	static
+../mcxn-kit/mcxn-kit-digital-io.cpp:95:10:uint32_t DigitalIn::read()	16	static
+../mcxn-kit/mcxn-kit-digital-io.cpp:103:1:DigitalOut::DigitalOut(uint32_t, uint32_t)	24	static
+../mcxn-kit/mcxn-kit-digital-io.cpp:107:1:DigitalOut::DigitalOut(uint32_t, uint32_t, uint32_t)	24	static
+../mcxn-kit/mcxn-kit-digital-io.cpp:114:10:uint32_t DigitalOut::read()	16	static
+../mcxn-kit/mcxn-kit-digital-io.cpp:119:6:void DigitalOut::write(uint32_t)	16	static
