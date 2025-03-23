@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE infoList
+  SYSTEM "crt_infolist.dtd">
+<infoList vendor="NXP">
+   <info name="MCXN947" chip="MCXN947">
+      <chip>
+         <name>MCXN947</name>
+         <family>MCXN9XX</family>
+         <vendor>NXP</vendor>
+         <memory id="Flash"
+                 type="Flash"
+                 size="1024"
+                 is_ro="true"
+                 can_program="true"/>
+         <memory id="RAM" type="RAM" size="4"/>
+         <memoryInstance id="PROGRAM_FLASH0"
+                         derived_from="Flash"
+                         location="0x00000000"
+                         size="0x00100000"
+                         driver="MCXNxxx.cfx"/>
+         <memoryInstance id="PROGRAM_FLASH1"
+                         derived_from="Flash"
+                         location="0x00100000"
+                         size="0x00100000"
+                         driver="MCXNxxx.cfx"/>
+         <memoryInstance id="SRAM"
+                         derived_from="RAM"
+                         location="0x20000000"
+                         size="0x00060000"/>
+         <memoryInstance id="SRAMX"
+                         derived_from="RAM"
+                         location="0x04000000"
+                         size="0x00018000"/>
+         <memoryInstance id="SRAMH"
+                         derived_from="RAM"
+                         location="0x20060000"
+                         size="0x00008000"/>
+         <memoryInstance id="USB_RAM"
+                         derived_from="RAM"
+                         location="0x400BA000"
+                         size="0x00001000"/>
+      </chip>
+      <processor>
+         <name gcc_name="cortex-m33">Cortex-M33</name>
+         <family>Cortex-M</family>
+      </processor>
+      <processor>
+         <name gcc_name="cortex-m33-nodsp">Cortex-M33 (No DSP)</name>
+         <family>Cortex-M</family>
+      </processor>
+   </info>
+</infoList>

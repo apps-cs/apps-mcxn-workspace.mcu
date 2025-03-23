@@ -1,0 +1,7 @@
+/poli/home/tmp/apps-mcxn-workspace.mcu-24.12/test/drivers/fsl_clock.h:1489:20:CLOCK_EnableClock	24	static
+../board/clock_config.c:47:6:BOARD_InitBootClocks	8	static
+../board/clock_config.c:84:6:BOARD_BootClockFRO12M	24	static
+../board/clock_config.c:153:6:BOARD_BootClockFROHF48M	24	static
+../board/clock_config.c:227:6:BOARD_BootClockFROHF144M	24	static
+../board/clock_config.c:306:6:BOARD_BootClockPLL150M	48	static
+../board/clock_config.c:398:6:BOARD_BootClockPLL100M	48	static

@@ -1,0 +1,31 @@
+/poli/home/tmp/mcxn/test/CMSIS/core_cm33.h:2358:22:void __NVIC_EnableIRQ(IRQn_Type)	16	static
+/poli/home/tmp/mcxn/test/CMSIS/core_cm33.h:2396:22:void __NVIC_DisableIRQ(IRQn_Type)	16	static
+/poli/home/tmp/mcxn/test/drivers/fsl_common_arm.h:667:24:status_t EnableIRQ(IRQn_Type)	24	static
+/poli/home/tmp/mcxn/test/drivers/fsl_common_arm.h:717:24:status_t DisableIRQ(IRQn_Type)	24	static
+/poli/home/tmp/mcxn/test/drivers/fsl_mrt.h:112:20:void MRT_GetDefaultConfig(mrt_config_t*)	16	static
+/poli/home/tmp/mcxn/test/drivers/fsl_mrt.h:128:20:void MRT_SetupChannelMode(MRT_Type*, mrt_chnl_t, mrt_timer_mode_t)	24	static
+/poli/home/tmp/mcxn/test/drivers/fsl_mrt.h:157:20:void MRT_EnableInterrupts(MRT_Type*, mrt_chnl_t, uint32_t)	24	static
+/poli/home/tmp/mcxn/test/drivers/fsl_mrt.h:222:20:void MRT_ClearStatusFlags(MRT_Type*, mrt_chnl_t, uint32_t)	24	static
+/poli/home/tmp/mcxn/test/drivers/fsl_mrt.h:289:20:void MRT_StartTimer(MRT_Type*, mrt_chnl_t, uint32_t)	24	static
+/usr/local/mcuxpressoide-24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.linux_24.12.0.202407110909/tools/arm-none-eabi/include/c++/13.2.1/bits/std_function.h:241:5:std::_Function_base::~_Function_base()	16	static
+/usr/local/mcuxpressoide-24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.linux_24.12.0.202407110909/tools/arm-none-eabi/include/c++/13.2.1/bits/std_function.h:247:10:bool std::_Function_base::_M_empty() const	16	static
+/usr/local/mcuxpressoide-24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.linux_24.12.0.202407110909/tools/arm-none-eabi/include/c++/13.2.1/bits/std_function.h:334:11:std::function<void()>::~function()	16	static
+../mcxn-kit/mcxn-kit-ticker.cpp:46:6:void MRT0_IRQHandler()	16	static
+../mcxn-kit/mcxn-kit-ticker.cpp:66:13:void _init_mrt()	16	static
+../mcxn-kit/mcxn-kit-ticker.cpp:87:1:Ticker::Ticker()	16	static
+../mcxn-kit/mcxn-kit-ticker.cpp:99:1:Ticker::~Ticker()	16	static
+../mcxn-kit/mcxn-kit-ticker.cpp:105:10:uint32_t Ticker::_attach(std::function<void()>, uint32_t)	32	static
+../mcxn-kit/mcxn-kit-ticker.cpp:146:6:void Ticker::detach()	16	static
+/usr/local/mcuxpressoide-24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.linux_24.12.0.202407110909/tools/arm-none-eabi/include/c++/13.2.1/bits/std_function.h:239:5:constexpr std::_Function_base::_Function_base()	16	static
+/usr/local/mcuxpressoide-24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.linux_24.12.0.202407110909/tools/arm-none-eabi/include/c++/13.2.1/bits/std_function.h:587:7:) const [with _Res = void; _ArgTypes = {}]	16	static
+/usr/local/mcuxpressoide-24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.linux_24.12.0.202407110909/tools/arm-none-eabi/include/c++/13.2.1/bits/std_function.h:469:7:)>&) [with _Res = void; _ArgTypes = {}]	32	static
+/usr/local/mcuxpressoide-24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.linux_24.12.0.202407110909/tools/arm-none-eabi/include/c++/13.2.1/bits/std_function.h:501:7:)>::operator=(std::nullptr_t) [with _Res = void; _ArgTypes = {}]	16	static
+/usr/local/mcuxpressoide-24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.linux_24.12.0.202407110909/tools/arm-none-eabi/include/c++/13.2.1/bits/std_function.h:386:7:)>&) [with _Res = void; _ArgTypes = {}]	16	static
+/usr/local/mcuxpressoide-24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.linux_24.12.0.202407110909/tools/arm-none-eabi/include/c++/13.2.1/bits/std_function.h:556:12:)>&) [with _Res = void; _ArgTypes = {}]	16	static
+/usr/local/mcuxpressoide-24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.linux_24.12.0.202407110909/tools/arm-none-eabi/include/c++/13.2.1/bits/std_function.h:573:16:)>::operator bool() const [with _Res = void; _ArgTypes = {}]	16	static
+/usr/local/mcuxpressoide-24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.linux_24.12.0.202407110909/tools/arm-none-eabi/include/c++/13.2.1/bits/move.h:189:5:std::_Require<std::__not_<std::__is_tuple_like<_Tp> >, std::is_move_constructible<_Tp>, std::is_move_assignable<_Tp> > std::swap(_Tp&, _Tp&) [with _Tp = _Any_data]	24	static
+/usr/local/mcuxpressoide-24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.linux_24.12.0.202407110909/tools/arm-none-eabi/include/c++/13.2.1/bits/move.h:189:5:std::_Require<std::__not_<std::__is_tuple_like<_Tp> >, std::is_move_constructible<_Tp>, std::is_move_assignable<_Tp> > std::swap(_Tp&, _Tp&) [with _Tp = bool (*)(_Any_data&, const _Any_data&, _Manager_operation)]	24	static
+/usr/local/mcuxpressoide-24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.linux_24.12.0.202407110909/tools/arm-none-eabi/include/c++/13.2.1/bits/move.h:189:5:std::_Require<std::__not_<std::__is_tuple_like<_Tp> >, std::is_move_constructible<_Tp>, std::is_move_assignable<_Tp> > std::swap(_Tp&, _Tp&) [with _Tp = void (*)(const _Any_data&)]	24	static
+/usr/local/mcuxpressoide-24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.linux_24.12.0.202407110909/tools/arm-none-eabi/include/c++/13.2.1/bits/move.h:97:5:constexpr typename std::remove_reference<_Tp>::type&& std::move(_Tp&&) [with _Tp = _Any_data&]	16	static
+/usr/local/mcuxpressoide-24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.linux_24.12.0.202407110909/tools/arm-none-eabi/include/c++/13.2.1/bits/move.h:97:5:constexpr typename std::remove_reference<_Tp>::type&& std::move(_Tp&&) [with _Tp = bool (*&)(_Any_data&, const _Any_data&, _Manager_operation)]	16	static
+/usr/local/mcuxpressoide-24.12.148/ide/plugins/com.nxp.mcuxpresso.tools.linux_24.12.0.202407110909/tools/arm-none-eabi/include/c++/13.2.1/bits/move.h:97:5:constexpr typename std::remove_reference<_Tp>::type&& std::move(_Tp&&) [with _Tp = void (*&)(const _Any_data&)]	16	static

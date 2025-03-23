@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chips chipVendor="NXP"
+       family="MCXN9XX"
+       vendorURL="http://www.nxp.com"
+       chipURL="">
+   <chip name="MCXN947"
+         displayName="MCXN947"
+         xml_file="MCXN947_internal.xml"
+         chipURL=""/>
+</chips>

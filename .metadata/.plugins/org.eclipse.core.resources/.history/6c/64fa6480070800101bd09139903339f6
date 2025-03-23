@@ -1,0 +1,17 @@
+/poli/home/tmp/mcxn/lcd/drivers/fsl_clock.h:1489:20:void CLOCK_EnableClock(clock_ip_name_t)	24	static
+/poli/home/tmp/mcxn/lcd/drivers/fsl_port.h:463:20:void PORT_SetPinMux(PORT_Type*, uint32_t, port_mux_t)	24	static
+../source/lcd_lib.cpp:27:13:void _init_spi_pins()	8	static
+../source/lcd_lib.cpp:85:13:void _spi_init()	40	static
+../source/lcd_lib.cpp:175:6:void _spi_send_data(const uint8_t*, uint32_t)	32	static
+../source/lcd_lib.cpp:185:6:void _lcd_send_command(uint8_t, const uint8_t*, uint32_t)	64	dynamic
+../source/lcd_lib.cpp:202:13:void _lcd_hw_reset()	8	static
+../source/lcd_lib.cpp:210:13:void _lcd_sw_reset()	8	static
+../source/lcd_lib.cpp:216:13:void _lcd_sleep(uint32_t)	16	static
+../source/lcd_lib.cpp:228:13:void _lcd_enable(uint32_t)	16	static
+../source/lcd_lib.cpp:240:13:void _lcd_preset()	24	static
+../source/lcd_lib.cpp:258:6:void _lcd_select_area(uint16_t, uint16_t, uint16_t, uint16_t)	48	static
+../source/lcd_lib.cpp:283:6:void lcd_init()	1944	static
+../source/lcd_lib.cpp:310:6:void lcd_put_pixel(uint16_t, uint16_t, uint16_t)	48	static
+../source/lcd_lib.cpp:337:6:void lcd_put_square(uint16_t, uint16_t, uint16_t, uint8_t)	56	dynamic
+../source/lcd_lib.cpp:369:1:void __static_initialization_and_destruction_0()	8	static
+../source/lcd_lib.cpp:369:1:cpp)	8	static

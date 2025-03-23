@@ -1,0 +1,11 @@
+/poli/home/tmp/apps-mcxn-workspace.mcu-24.12/leds/drivers/fsl_port.h:360:20:void PORT_SetPinConfig(PORT_Type*, uint32_t, const port_pin_config_t*)	32	static
+/poli/home/tmp/apps-mcxn-workspace.mcu-24.12/leds/drivers/fsl_gpio.h:345:20:void GPIO_PinWrite(GPIO_Type*, uint32_t, uint8_t)	24	static
+/poli/home/tmp/apps-mcxn-workspace.mcu-24.12/leds/drivers/fsl_gpio.h:427:24:uint32_t GPIO_PinRead(GPIO_Type*, uint32_t)	16	static
+../mcxn-kit/mcxn-kit-digital-io.cpp:24:1:DigitalBase::DigitalBase(pin_name_t, uint32_t)	32	static
+../mcxn-kit/mcxn-kit-digital-io.cpp:74:1:DigitalIn::DigitalIn(pin_name_t)	16	static
+../mcxn-kit/mcxn-kit-digital-io.cpp:78:1:DigitalIn::DigitalIn(pin_name_t, uint32_t)	24	static
+../mcxn-kit/mcxn-kit-digital-io.cpp:82:10:uint32_t DigitalIn::read()	16	static
+../mcxn-kit/mcxn-kit-digital-io.cpp:88:1:DigitalOut::DigitalOut(pin_name_t, uint32_t)	24	static
+../mcxn-kit/mcxn-kit-digital-io.cpp:92:1:DigitalOut::DigitalOut(pin_name_t, uint32_t, uint32_t)	24	static
+../mcxn-kit/mcxn-kit-digital-io.cpp:99:10:uint32_t DigitalOut::read()	16	static
+../mcxn-kit/mcxn-kit-digital-io.cpp:104:6:void DigitalOut::write(uint32_t)	16	static

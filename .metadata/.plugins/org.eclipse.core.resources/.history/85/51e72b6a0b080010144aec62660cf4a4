@@ -1,0 +1,4 @@
+../source/test-lcd.cpp:20:6:void lcd_single_colour(uint16_t)	984	static
+../source/test-lcd.cpp:38:6:void lcd_rainbow()	1040	static
+../source/test-lcd.cpp:71:6:void lcd_put_char(int32_t, int32_t, uint8_t, int)	40	static
+../source/test-lcd.cpp:102:6:void test_lcd()	56	static

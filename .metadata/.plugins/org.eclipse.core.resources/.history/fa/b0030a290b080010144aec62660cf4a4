@@ -1,0 +1,129 @@
+
+#include <string.h>
+
+#include "mcxn-kit.h"
+#include "lcd_lib.h"
+
+extern uint8_t g_font8x8[ 256 ][ 8 ];
+
+//void  SPI_write_data( uint8_t Data );
+//void  lcd_write_command( uint8_t t_data );
+//void  lcd_write_data( uint8_t t_data );
+//void  lcd_write_data_16( uint16_t t_data );
+//void  lcd_write_data_buf( uint8_t *t_data, uint32_t t_len );
+
+void _spi_send_data( const uint8_t *tp_data, uint32_t t_data_len );
+void _lcd_send_command( uint8_t t_command, const uint8_t *tp_data, uint32_t t_data_len );
+void _lcd_select_area( uint16_t startX, uint16_t startY, uint16_t endX, uint16_t endY );
+
+
+void lcd_single_colour( uint16_t t_color )
+{
+	uint8_t l_buf[ LCD_WIDTH * 2 ];
+	l_buf[ 0 ] = t_color >> 8;
+	l_buf[ 1 ] = t_color;
+	for ( int i = 1; i < LCD_WIDTH; i++ )
+	{
+		l_buf[ 2 * i + 0 ] = l_buf[ 0 ];
+		l_buf[ 2 * i + 1 ] = l_buf[ 1 ];
+	}
+	for ( int y = 0; y < LCD_HEIGHT; y++ )
+	{
+	//lcd_write_command( 0x2c );
+		_lcd_select_area( 0,  y, LCD_WIDTH, y );
+		_lcd_send_command( 0x2c, l_buf, sizeof( l_buf ) );
+	}
+}
+
+void lcd_rainbow()
+{
+	int R = 110;
+	int R2 = R * R;
+	int sx[ 3 ] = { R, 2 * R, R + R / 2 };
+	int sy[ 3 ] = { R, R, 0 };
+	sy[ 2 ] = R + R * 87 / 100;
+	uint16_t l_color[ 3 ] = { 0xF800, 0x07E0, 0x001F };
+	uint8_t l_buf[ 2 * LCD_WIDTH ];
+	//memset( l_buf, 0xff, sizeof( l_buf ) );
+	//lcd_write_command( 0x2c, NULL, 0 );
+	for ( int y = 0; y < LCD_HEIGHT; y++ )
+	{
+		for ( int x = 0; x < LCD_WIDTH; x++ )
+		{
+			uint16_t c = 0;
+			for ( int i = 0; i < 3; i++ )
+			{
+				int dx = sx[ i ] - x;
+				int dy = sy[ i ] - y;
+				int r = dx * dx + dy * dy;
+				if ( r < R2 ) c |= l_color[ i ];
+			}
+			//lcd_write_data_16(c);
+			l_buf[ 2 * x ] = c >> 8;
+			l_buf[ 2 * x + 1 ] = c;
+			//lcd_put_pixel( x, y, c );
+		}
+		_lcd_select_area( 0,  y,  LCD_WIDTH, y );
+		_lcd_send_command( 0x2C, l_buf, sizeof( l_buf ) );
+	}
+}
+
+void lcd_put_char( int32_t t_x, int32_t t_y, uint8_t t_char, int t_color )
+{
+    //lcd_write_command( 0x2A );
+    //lcd_write_data_16( t_x );
+    //lcd_write_data_16( t_x + 7 );
+
+    //lcd_write_command( 0x2B );
+    //lcd_write_data_16( t_y );
+    //lcd_write_data_16( t_y + 7 );
+
+	/*_lcd_select_area( t_x,  t_y,  t_x + 7, t_y + 7 );
+    uint8_t sq[ 8 ][ 8 * 4 ];
+    memset( sq, 0xff, )*/
+    uint8_t *l_font = g_font8x8[ t_char ];
+    for ( int r = 0; r < 8; r++ )
+    {
+    	for ( int s = 0; s < 8; s++ )
+    	{
+    		if ( l_font[ r ] & ( 1 << s ) ) lcd_put_pixel( t_x + s, t_y + r, t_color );
+    		else lcd_put_pixel( t_x + s, t_y + r, 0 );
+    	}
+    }
+    /*lcd_write_command( 0x2A );
+    lcd_write_data_16( 0 );
+    lcd_write_data_16( LCD_WIDTH - 1 );
+
+    lcd_write_command( 0x2B );
+    lcd_write_data_16( 0 );
+    lcd_write_data_16( LCD_HEIGHT - 1 );*/
+}
+
+void test_lcd()
+{ 
+	//Reset();
+	lcd_init();
+
+	int l_colors[ 5 ] = { 0, 0xffff, 0xf800, 0x07E0, 0x001F };
+	while ( 1 )
+	{
+		for ( int c = 0; c < 5; c++ )
+		{
+			//lcd_write_command( 0x2C );
+
+			lcd_single_colour( l_colors[ c ] );
+			delay_ms( 500 );
+
+			lcd_rainbow();
+			const char *l_hello = "Hello World!";
+			int32_t l_hello_len = strlen( l_hello );
+
+			for ( int i = 0; i < l_hello_len; i++ )
+			{
+				lcd_put_char( 300 + 9 * i, 200, l_hello[ i ], 0xFFFF );
+			}
+			delay_ms( 1000 );
+		}
+	}
+}
+

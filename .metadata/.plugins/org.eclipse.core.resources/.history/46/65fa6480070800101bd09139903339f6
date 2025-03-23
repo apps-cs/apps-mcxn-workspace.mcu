@@ -1,0 +1,5 @@
+/poli/home/tmp/mcxn/lcd/drivers/fsl_clock.h:1489:20:void CLOCK_EnableClock(clock_ip_name_t)	24	static
+../source/main-lcd.cpp:41:6:void _mcu_initialization()	8	static
+../source/main-lcd.cpp:68:5:int main()	32	static
+../source/main-lcd.cpp:94:1:void __static_initialization_and_destruction_0()	8	static
+../source/main-lcd.cpp:94:1:cpp)	8	static

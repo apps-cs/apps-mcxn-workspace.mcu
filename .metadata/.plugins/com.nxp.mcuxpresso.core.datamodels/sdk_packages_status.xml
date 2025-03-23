@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdk-packages>
+<package hash="1742747857048" path="/poli/home/tmp/mcxn/test-all/part-support" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
+<package hash="1742747857048" path="/poli/home/tmp/apps-mcxn-workspace.mcu-24.12/lcd/part-support" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
+<package hash="1742747857048" path="/poli/home/tmp/apps-mcxn-workspace.mcu-24.12/leds/part-support" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
+<package hash="1742747857048" path="/poli/home/tmp/mcxn/lcd/part-support" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
+<package hash="1742747857048" path="/poli/home/tmp/apps-mcxn-workspace.mcu-24.12/test/part-support" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
+<package hash="1742747857048" path="/poli/home/tmp/apps-mcxn-workspace.mcu-24.12/test-all/part-support" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
+<package hash="1742747857048" path="/poli/home/tmp/mcxn/test/part-support" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
+<package hash="1742747857048" path="/poli/home/tmp/mcxn/leds/part-support" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
+<package hash="1742498332487" path="/poli/home/tmp/apps-mcxn-workspace.mcu-24.12/mcuxpresso/SDKPackages/SDK_24_12_00_FRDM-MCXN947.zip" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
+<package hash="1742498332487" path="/poli/home/tmp/mcxn/mcuxpresso/SDKPackages/SDK_24_12_00_FRDM-MCXN947.zip" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
+</sdk-packages>

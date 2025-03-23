@@ -1,0 +1,313 @@
+
+
+#include <stdio.h>
+
+#include "mcxn-kit.h"
+
+static DigitalOut *gp_red;
+static DigitalOut *gp_rgb;
+
+#define T 25
+
+static int g_test1 = 0;
+
+static void test1()
+{
+	static int l_ticks = 0;
+	static int l_stage = 0;
+	static int l_led = 0;
+	static int l_up_down = 1;
+	static int l_pwm = 0;
+
+	if ( g_test1 ) return;
+
+	if ( l_stage == 0 )
+	{
+		l_ticks = 0;
+		l_led = 0;
+		l_up_down = 1;
+		l_pwm = 0;
+		l_stage = 1;
+	}
+
+	l_ticks++;
+
+	gp_red[ l_led ].write( ( l_ticks < l_pwm ) );
+
+	if ( l_ticks >= T )
+	{
+		l_ticks = 0;
+
+		l_pwm += l_up_down;
+		if ( l_pwm == T || l_pwm == 0 )
+		{
+			l_up_down *= -1;
+
+			if ( l_pwm == 0 )
+				l_led++;
+		}
+
+		if ( l_led == 8 )
+		{
+			l_led = 0;
+			g_test1 = 1;
+		}
+	}
+}
+
+static int g_test2 = 0;
+
+static void test2()
+{
+	static int l_ticks = 0;
+	static int l_stage = 0;
+	static int l_led = 0;
+	static int l_up_down = 1;
+	static int l_pwm = 0;
+
+	int inx0[ 3 ] = { 0, 1, 2 };
+	int inx1[ 3 ] = { 4, 5, 3 };
+	int inx2[ 3 ] = { 8, 6, 7 };
+
+	if ( g_test2 ) return;
+
+	if ( l_stage == 0 )
+	{
+		l_ticks = 0;
+		l_led = 0;
+		l_up_down = 1;
+		l_pwm = 0;
+		l_stage = 1;
+	}
+
+	l_ticks++;
+
+	gp_rgb[ inx0[ l_led ] ].write( l_ticks < l_pwm );
+	gp_rgb[ inx1[ l_led ] ].write( l_ticks < l_pwm );
+	gp_rgb[ inx2[ l_led ] ].write( l_ticks < l_pwm );
+
+	if ( l_ticks >= T )
+	{
+		l_ticks = 0;
+
+		l_pwm += l_up_down;
+		if ( l_pwm == T || l_pwm == 0 )
+		{
+			l_up_down *= -1;
+
+			if ( l_pwm == 0 )
+				l_led++;
+		}
+
+		if ( l_led == 3 )
+		{
+			l_led = 0;
+			g_test2 = 1;
+		}
+	}
+}
+
+static int g_test3 = 0;
+
+static void test3()
+{
+	static int l_ticks = 0;
+	static int l_stage = 0;
+	static int l_led = 0;
+	static int l_up_down = 1;
+	static int l_pwm = 0;
+
+	int inx0[ 2 ] = { 0, 1 };
+	int inx1[ 2 ] = { 4, 5 };
+	int inx2[ 2 ] = { 8, 6 };
+
+	if ( g_test3 ) return;
+
+	if ( l_stage == 0 )
+	{
+		l_ticks = 0;
+		l_led = 0;
+		l_up_down = 1;
+		l_pwm = 0;
+		l_stage = 1;
+	}
+
+	l_ticks++;
+
+	gp_rgb[ inx0[ l_led ] ].write( l_ticks < l_pwm );
+	gp_rgb[ inx1[ l_led ] ].write( l_ticks < l_pwm );
+	gp_rgb[ inx2[ l_led ] ].write( l_ticks < l_pwm );
+
+	if ( l_ticks >= T )
+	{
+		l_ticks = 0;
+
+		l_pwm += l_up_down;
+		if ( l_pwm == T && l_up_down > 0 )
+		{
+			gp_rgb[ inx0[ l_led ] ].write( 1 );
+			gp_rgb[ inx1[ l_led ] ].write( 1 );
+			gp_rgb[ inx2[ l_led ] ].write( 1 );
+			l_led++;
+			l_pwm = 0;
+			if ( l_led == 2 )
+			{
+				l_up_down *= -1;
+				l_led = 0;
+				l_pwm = T;
+			}
+		}
+		if ( l_pwm == 0 && l_up_down < 0 )
+		{
+			l_led++;
+			l_pwm = T;
+			if ( l_led == 2 )
+			{
+				l_up_down *= -1;
+				l_led = 0;
+				g_test3 = 1;
+				l_stage = 0;
+			}
+		}
+
+	}
+}
+
+static int g_test4 = 0;
+
+static void test4()
+{
+	static int l_ticks = 0;
+	static int l_stage = 0;
+	static int l_led = 0;
+	static int l_up_down = 1;
+	static int l_pwm = 0;
+
+	int inx0[ 3 ] = { 0, 1, 2 };
+	int inx1[ 3 ] = { 4, 5, 3 };
+	int inx2[ 3 ] = { 8, 6, 7 };
+
+	if ( g_test4 ) return;
+
+	if ( l_stage == 0 )
+	{
+		l_ticks = 0;
+		l_led = 0;
+		l_up_down = 1;
+		l_pwm = 0;
+		l_stage = 1;
+	}
+
+	l_ticks++;
+
+	if ( l_up_down > 0 )
+	{
+		gp_rgb[ inx0[ l_led ] ].write( l_ticks < l_pwm );
+		gp_rgb[ inx1[ l_led ] ].write( l_ticks < l_pwm );
+		gp_rgb[ inx2[ l_led ] ].write( l_ticks < l_pwm );
+	}
+	else
+	{
+		for ( int i = 0; i < 3; i++ )
+		{
+			gp_rgb[ inx0[ i ] ].write( l_ticks < l_pwm );
+			gp_rgb[ inx1[ i ] ].write( l_ticks < l_pwm );
+			gp_rgb[ inx2[ i ] ].write( l_ticks < l_pwm );
+		}
+	}
+
+	if ( l_ticks >= T )
+	{
+		l_ticks = 0;
+
+		l_pwm += l_up_down;
+		if ( l_pwm == T && l_up_down > 0 )
+		{
+			gp_rgb[ inx0[ l_led ] ].write( 1 );
+			gp_rgb[ inx1[ l_led ] ].write( 1 );
+			gp_rgb[ inx2[ l_led ] ].write( 1 );
+			l_led++;
+			l_pwm = 0;
+			if ( l_led == 3 )
+			{
+				l_up_down *= -1;
+				l_led = 0;
+				l_pwm = T;
+			}
+		}
+		if ( l_pwm == 0 && l_up_down < 0 )
+		{
+			l_led++;
+			l_pwm = T;
+			if ( l_led == 1 )
+			{
+				l_up_down *= -1;
+				l_led = 0;
+				g_test4 = 1;
+				l_stage = 0;
+			}
+		}
+
+	}
+}
+
+//LEDky
+void test_leds()
+{
+	static DigitalOut l_red[ 8 ] = {
+			P4_00,
+			P4_01,
+			P4_02,
+			P4_03,
+			P4_12,
+			P4_13,
+			P4_16,
+			P4_20,
+	};
+
+	static DigitalOut l_rgb[ 9 ] = {
+			P0_14,
+			P0_15,
+			P0_22,
+			P0_24,
+			P0_25,
+			P0_26,
+			P0_28,
+			P0_29,
+			P0_30,
+	};
+
+	gp_red = l_red;
+	gp_rgb = l_rgb;
+
+	while ( 1 )
+	{
+		printf( "repeat \r\n" );
+		Ticker l_ticker;
+
+		g_test1 = 0;
+		l_ticker.attach( test1, 1 );
+
+		while ( !g_test1 );
+		l_ticker.detach();
+
+		g_test2 = 0;
+		l_ticker.attach( test2, 1 );
+
+		while ( !g_test2 );
+		l_ticker.detach();
+
+		g_test3 = 0;
+		l_ticker.attach( test3, 1 );
+
+		while ( !g_test3 );
+		l_ticker.detach();
+
+		g_test4 = 0;
+		l_ticker.attach( test4, 1 );
+
+		while ( !g_test4 );
+		l_ticker.detach();
+	}
+}
+

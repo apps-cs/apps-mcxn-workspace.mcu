@@ -1,0 +1,6 @@
+/poli/home/tmp/apps-mcxn-workspace.mcu-24.12/leds/drivers/fsl_clock.h:1489:20:void CLOCK_EnableClock(clock_ip_name_t)	24	static
+../source/main-leds.cpp:36:6:void _mcu_initialization()	8	static
+../source/main-leds.cpp:63:6:void control_from_ticker()	16	static
+../source/main-leds.cpp:90:5:int main()	16	static
+../source/main-leds.cpp:126:1:void __static_initialization_and_destruction_0()	8	static
+../source/main-leds.cpp:126:1:cpp)	8	static

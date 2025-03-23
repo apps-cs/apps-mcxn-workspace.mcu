@@ -1,0 +1,37 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CPP_SRCS += \
+../mcxn-kit/mcxn-kit-delay.cpp \
+../mcxn-kit/mcxn-kit-digital-io.cpp \
+../mcxn-kit/mcxn-kit-ticker.cpp 
+
+CPP_DEPS += \
+./mcxn-kit/mcxn-kit-delay.d \
+./mcxn-kit/mcxn-kit-digital-io.d \
+./mcxn-kit/mcxn-kit-ticker.d 
+
+OBJS += \
+./mcxn-kit/mcxn-kit-delay.o \
+./mcxn-kit/mcxn-kit-digital-io.o \
+./mcxn-kit/mcxn-kit-ticker.o 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+mcxn-kit/%.o: ../mcxn-kit/%.cpp mcxn-kit/subdir.mk
+	@echo 'Building file: $<'
+	@echo 'Invoking: MCU C++ Compiler'
+	arm-none-eabi-c++ -DCPU_MCXN947VDF -DCPU_MCXN947VDF_cm33 -DCPU_MCXN947VDF_cm33_core0 -DSDK_DEBUGCONSOLE=1 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__NEWLIB__ -I"/poli/home/tmp/mcxn/test-all/board" -I"/poli/home/tmp/mcxn/test-all/mcxn-kit" -I"/poli/home/tmp/mcxn/test-all/source" -I"/poli/home/tmp/mcxn/test-all/drivers" -I"/poli/home/tmp/mcxn/test-all/device" -I"/poli/home/tmp/mcxn/test-all/utilities/debug_console" -I"/poli/home/tmp/mcxn/test-all/component/uart" -I"/poli/home/tmp/mcxn/test-all/utilities/debug_console/config" -I"/poli/home/tmp/mcxn/test-all/component/serial_manager" -I"/poli/home/tmp/mcxn/test-all/component/lists" -I"/poli/home/tmp/mcxn/test-all/device/periph" -I"/poli/home/tmp/mcxn/test-all/utilities" -I"/poli/home/tmp/mcxn/test-all/CMSIS" -I"/poli/home/tmp/mcxn/test-all/CMSIS/m-profile" -I"/poli/home/tmp/mcxn/test-all/utilities/str" -O0 -fno-common -g3 -gdwarf-4 -Wall -c -ffunction-sections -fdata-sections -fno-builtin -fno-rtti -fno-exceptions -fmerge-constants -fmacro-prefix-map="$(<D)/"= -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -D__NEWLIB__ -fstack-usage -specs=nano.specs -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+
+clean: clean-mcxn-2d-kit
+
+clean-mcxn-2d-kit:
+	-$(RM) ./mcxn-kit/mcxn-kit-delay.d ./mcxn-kit/mcxn-kit-delay.o ./mcxn-kit/mcxn-kit-digital-io.d ./mcxn-kit/mcxn-kit-digital-io.o ./mcxn-kit/mcxn-kit-ticker.d ./mcxn-kit/mcxn-kit-ticker.o
+
+.PHONY: clean-mcxn-2d-kit
+
