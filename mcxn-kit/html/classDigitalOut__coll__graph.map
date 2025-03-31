@@ -1,0 +1,5 @@
+<map id="DigitalOut" name="DigitalOut">
+<area shape="rect" id="Node000001" title="Class for digital output pin." alt="" coords="10,79,98,104"/>
+<area shape="rect" id="Node000002" href="$classDigitalBase.html" title="Base of DigitalIO classes. The whole class is protected and can&#39;t be used directly." alt="" coords="5,5,103,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="57,44,57,79,51,79,51,44"/>
+</map>
