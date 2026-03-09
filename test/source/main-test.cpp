@@ -38,6 +38,7 @@ void _mcu_initialization()
     BOARD_InitBootPins();
     BOARD_InitBootClocks();
     BOARD_InitBootPeripherals();
+    BOARD_InitDebugConsole();
     CLOCK_EnableClock( kCLOCK_Gpio0 );
     CLOCK_EnableClock( kCLOCK_Gpio1 );
     CLOCK_EnableClock( kCLOCK_Gpio2 );

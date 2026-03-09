@@ -262,7 +262,7 @@ int main()
 
 		delay_ms( l_period / 2 );
 
-		g_led_P3_16.write( 0 );					// LED off
+		g_led_P3_17.write( 0 );					// LED off
 
 		delay_ms( l_period / 2 );
 	}
