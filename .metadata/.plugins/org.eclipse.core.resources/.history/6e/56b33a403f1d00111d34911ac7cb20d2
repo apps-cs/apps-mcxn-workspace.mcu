@@ -1,0 +1,4 @@
+../source/si4735-lib.cpp:19:13:void wait_us(uint32_t)	16	static
+../source/si4735-lib.cpp:28:13:void fm_print(const char*)	16	static
+../source/si4735-lib.cpp:35:13:char fm_check(char)	16	static
+../source/si4735-lib.cpp:45:6:char si4735_init()	16	static

@@ -1,4 +1,4 @@
-18:58:31 **** Clean-only build of configuration Debug for project test ****
+12:46:01 **** Clean-only build of configuration Debug for project test ****
 make -r -j20 clean 
 rm -rf ./utilities/str/fsl_str.d ./utilities/str/fsl_str.o
 rm -rf ./utilities/debug_console/fsl_debug_console.d ./utilities/debug_console/fsl_debug_console.o
@@ -15,5 +15,5 @@ rm -rf ./board/board.d ./board/board.o ./board/clock_config.d ./board/clock_conf
 rm -rf test.axf
  
 
-18:58:31 Build Finished. 0 errors, 0 warnings. (took 190ms)
+12:46:01 Build Finished. 0 errors, 0 warnings. (took 256ms)
 

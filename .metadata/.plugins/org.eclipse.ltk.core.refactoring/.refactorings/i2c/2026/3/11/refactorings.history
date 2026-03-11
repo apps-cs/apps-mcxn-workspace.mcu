@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;i2c/source/old_main-i2c.cpp&apos; to &apos;old_main-i2c.nocpp&apos;" description="Rename resource &apos;old_main-i2c.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="source/old_main-i2c.cpp" name="old_main-i2c.nocpp" stamp="1772994405663" updateReferences="true"/>
+</session>

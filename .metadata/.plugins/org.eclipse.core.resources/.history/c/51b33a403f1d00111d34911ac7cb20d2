@@ -1,0 +1,14 @@
+../source/i2c-lib.cpp:26:6:void _i2c_delay(uint32_t)	16	static
+../source/i2c-lib.cpp:32:13:void _i2c_sda(uint8_t, uint8_t)	16	static
+../source/i2c-lib.cpp:42:9:uint8_t _i2c_get_sda(uint8_t)	16	static
+../source/i2c-lib.cpp:52:6:void _i2c_scl(uint8_t)	16	static
+../source/i2c-lib.cpp:63:6:void i2c_init()	8	static
+../source/i2c-lib.cpp:73:6:void i2c_start()	8	static
+../source/i2c-lib.cpp:82:6:void i2c_stop()	8	static
+../source/i2c-lib.cpp:91:6:void i2c_ack()	8	static
+../source/i2c-lib.cpp:100:6:void i2c_nack()	8	static
+../source/i2c-lib.cpp:109:9:uint8_t i2c_get_ack()	16	static
+../source/i2c-lib.cpp:119:9:uint8_t i2c_output(uint8_t)	24	static
+../source/i2c-lib.cpp:134:9:uint8_t i2c_input()	16	static
+../source/i2c-lib.cpp:150:1:void __static_initialization_and_destruction_0()	8	static
+../source/i2c-lib.cpp:150:1:cpp)	8	static

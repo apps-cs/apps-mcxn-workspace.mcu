@@ -1,0 +1,2 @@
+../utilities/fsl_assert.c:14:28:fsl_assert_hook	24	static
+/usr/local/mcuxpressoide-25.6.136/ide/plugins/com.nxp.mcuxpresso.tools.linux_25.6.0.202501151204/tools/arm-none-eabi/include/assert.h:41:6:__assert_func	32	static

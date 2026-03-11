@@ -1,0 +1,186 @@
+// **************************************************************************
+//
+//               Demo program for APPS labs
+//
+// Subject:      Computer Architectures and Parallel systems
+// Author:       Petr Olivka, petr.olivka@vsb.cz, 02/2025
+// Organization: Department of Computer Science, FEECS,
+//               VSB-Technical University of Ostrava, CZ
+//
+// File:         Main program for LEDs
+//
+// **************************************************************************
+
+/**
+ * @file    main-leds.cpp
+ * @brief   Application entry point.
+ */
+#include <stdio.h>
+#include <functional>
+#include <algorithm>
+#include "board.h"
+#include "peripherals.h"
+#include "pin_mux.h"
+#include "clock_config.h"
+#include "fsl_debug_console.h"
+
+#include "fsl_gpio.h"
+#include "fsl_port.h"
+#include "fsl_mrt.h"
+
+#include "mcxn-kit.h"
+#include "i2c-lib.h"
+#include "si4735-lib.h"
+
+// **************************************************************************
+//! System initialization. Do not modify it!!!
+void _mcu_initialization() __attribute__(( constructor( 0x100 ) ));
+
+void _mcu_initialization()
+{
+    BOARD_InitBootPins();
+    BOARD_InitBootClocks();
+    BOARD_InitBootPeripherals();
+    BOARD_InitDebugConsole();
+    CLOCK_EnableClock( kCLOCK_Gpio0 );
+    CLOCK_EnableClock( kCLOCK_Gpio1 );
+    CLOCK_EnableClock( kCLOCK_Gpio2 );
+    CLOCK_EnableClock( kCLOCK_Gpio3 );
+    CLOCK_EnableClock( kCLOCK_Gpio4 );
+}
+// **************************************************************************
+
+//! Global data
+
+//! LEDs on MCXN-KIT - instances of class DigitalOut
+DigitalOut g_led_P3_16( P3_16 );
+DigitalOut g_led_P3_17( P3_17 );
+
+//! Button on MCXN-KIT - instance of class DigitalIn
+DigitalIn g_but_P3_18( P3_18 );
+DigitalIn g_but_P3_19( P3_19 );
+DigitalIn g_but_P3_20( P3_20 );
+DigitalIn g_but_P3_21( P3_21 );
+
+// **************************************************************************
+// I2C
+//
+// Direction of I2C communication
+#define R	0b00000001
+#define W	0b00000000
+
+#pragma GCC diagnostic ignored "-Wunused-but-set-variable"
+
+extern DigitalOut g_scl, g_sda;
+
+int main()
+{
+	uint8_t l_S1, l_S2, l_RSSI, l_SNR, l_MULT, l_CAP;
+	uint8_t l_ack = 0;
+
+	PRINTF( "MCXN-KIT ready...\r\n" );
+
+	i2c_init();
+
+	// communication with 8 bit expander PCF8574
+	// start communication
+	i2c_start();
+
+	// PCF8574 addressing
+	// The address is composed from 3 parts!
+	//l_ack = i2c_output( HWADR_PCF8574 | A012 | W );
+	l_ack = i2c_output( 0x40 | 0x0 | W );
+
+	// Check l_ack! Return value must be 0!
+	// ....
+
+	//l_ack = i2c_output( Any_8_bit_value );
+	l_ack = i2c_output( 0xF );
+	// selected LEDs should light
+
+	// stop communication
+	i2c_stop();
+
+	i2c_start();
+
+	// PCF8574 addressing
+	// The address is composed from 3 parts!
+	//l_ack = i2c_output( HWADR_PCF8574 | A012 | W );
+	l_ack = i2c_output( 0x40 | 0x0 | R );
+
+	// Check l_ack! Return value must be 0!
+	// ....
+
+	//l_ack = i2c_output( Any_8_bit_value );
+	int res = i2c_input();
+	i2c_nack();
+	// selected LEDs should light
+
+	// stop communication
+	i2c_stop();
+
+	if ( ( l_ack = si4735_init() ) != 0 )
+	{
+		printf( "Initialization of SI4735 finish with error (%d)\r\n", l_ack );
+		return 0;
+	}
+	else
+		printf( "SI4735 initialized.\r\n" );
+
+	printf( "\nTunig of radio station...\r\n" );
+
+	// Required frequency in MHz * 100
+	int l_freq = 10140; // Radiozurnal
+
+	// Tuning of radio station
+	i2c_start();
+	l_ack |= i2c_output( SI4735_ADDRESS | W);
+	l_ack |= i2c_output( 0x20 );			// FM_TUNE_FREQ
+	l_ack |= i2c_output( 0x00 );			// ARG1
+	l_ack |= i2c_output( l_freq >> 8 );		// ARG2 - FreqHi
+	l_ack |= i2c_output( l_freq & 0xff );	// ARG3 - FreqLo
+	l_ack |= i2c_output( 0x00 );			// ARG4
+	i2c_stop();
+	// Check l_ack!
+	// if...
+
+	// Tuning process inside SI4735
+	delay_ms( 100 );
+	printf( "... station tuned.\r\n\n" );
+
+	// Example of reading of tuned frequency
+	i2c_start();
+	l_ack |= i2c_output( SI4735_ADDRESS | W );
+	l_ack |= i2c_output( 0x22 );			// FM_TUNE_STATUS
+	l_ack |= i2c_output( 0x00 );			// ARG1
+	// repeated start
+	i2c_start();
+	// change direction of communication
+	l_ack |= i2c_output( SI4735_ADDRESS | R );
+	// read data
+	l_S1 = i2c_input();
+	i2c_ack();
+	l_S2 = i2c_input();
+	i2c_ack();
+	l_freq = ( uint32_t ) i2c_input() << 8;
+	i2c_ack();
+	l_freq |= i2c_input();
+	i2c_ack();
+	l_RSSI = i2c_input();
+	i2c_ack();
+	l_SNR = i2c_input();
+	i2c_ack();
+	l_MULT = i2c_input();
+	i2c_ack();
+	l_CAP = i2c_input();
+	i2c_nack();
+	i2c_stop();
+
+	if ( l_ack != 0 )
+		printf( "Communication error!\r\n" );
+	else
+		printf( "Current tuned frequency: %d.%dMHz\r\n", l_freq / 100, l_freq % 100 );
+
+		return 0;
+}
+

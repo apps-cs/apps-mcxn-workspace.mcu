@@ -1,4 +1,4 @@
-19:01:09 **** Clean-only build of configuration Debug for project leds ****
+12:09:05 **** Clean-only build of configuration Debug for project leds ****
 make -r -j20 clean 
 rm -rf ./utilities/str/fsl_str.d ./utilities/str/fsl_str.o
 rm -rf ./utilities/debug_console/fsl_debug_console.d ./utilities/debug_console/fsl_debug_console.o
@@ -15,5 +15,5 @@ rm -rf ./board/board.d ./board/board.o ./board/clock_config.d ./board/clock_conf
 rm -rf leds.axf
  
 
-19:01:10 Build Finished. 0 errors, 0 warnings. (took 196ms)
+12:09:06 Build Finished. 0 errors, 0 warnings. (took 240ms)
 

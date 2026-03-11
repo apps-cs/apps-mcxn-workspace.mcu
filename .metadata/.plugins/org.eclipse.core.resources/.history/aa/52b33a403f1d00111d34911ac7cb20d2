@@ -1,0 +1,5 @@
+/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6/i2c/drivers/fsl_clock.h:1489:20:void CLOCK_EnableClock(clock_ip_name_t)	24	static
+../source/main-i2c.cpp:40:6:void _mcu_initialization()	8	static
+../source/main-i2c.cpp:77:5:int main()	24	static
+../source/main-i2c.cpp:174:1:void __static_initialization_and_destruction_0()	8	static
+../source/main-i2c.cpp:174:1:cpp)	8	static

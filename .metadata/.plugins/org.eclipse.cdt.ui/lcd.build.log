@@ -1,4 +1,4 @@
-07:08:04 **** Clean-only build of configuration Debug for project lcd ****
+12:16:04 **** Clean-only build of configuration Debug for project lcd ****
 make -r -j20 clean 
 rm -rf ./utilities/str/fsl_str.d ./utilities/str/fsl_str.o
 rm -rf ./utilities/debug_console/fsl_debug_console.d ./utilities/debug_console/fsl_debug_console.o
@@ -15,5 +15,5 @@ rm -rf ./board/board.d ./board/board.o ./board/clock_config.d ./board/clock_conf
 rm -rf lcd.axf
  
 
-07:08:05 Build Finished. 0 errors, 0 warnings. (took 194ms)
+12:16:05 Build Finished. 0 errors, 0 warnings. (took 256ms)
 

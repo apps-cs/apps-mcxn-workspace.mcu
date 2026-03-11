@@ -92,8 +92,8 @@ DigitalOut::DigitalOut( pin_name_t t_pin, uint32_t t_pin_output ) :
 DigitalOut::DigitalOut( pin_name_t t_pin, uint32_t t_pin_output, uint32_t t_pin_config ) :
 	DigitalBase( t_pin,
 			( t_pin_config & ( ~( PIN_OUT_MASK | PIN_DIR_MASK ) ) ) |
-			PIN_DIR_OUTPUT |
-			( t_pin_output == 0 ) ? PIN_OUT_LOW : PIN_OUT_HIGH )
+			( PIN_DIR_OUTPUT ) |
+			( ( t_pin_output == 0 ) ? PIN_OUT_LOW : PIN_OUT_HIGH ) )
 {}
 
 uint32_t DigitalOut::read()

@@ -1,16 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sdk-packages>
-<package hash="1742747857048" path="/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-24.12/leds/part-support" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
-<package hash="1742747857048" path="/poli/home/tmp/apps-mcxn-workspace.mcu-24.12/lcd/part-support" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
-<package hash="1742747857048" path="/poli/home/tmp/apps-mcxn-workspace.mcu-24.12/leds/part-support" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
+<package hash="1742747857048" path="/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6/lcd/part-support" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
+<package hash="1742747857048" path="/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-24.12-all/leds/part-support" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
+<package hash="1742747857048" path="/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6-all/i2c/part-support" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
+<package hash="1742498332487" path="/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6/mcuxpresso/SDKPackages/SDK_24_12_00_FRDM-MCXN947.zip" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
+<package hash="1742747857048" path="/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6-all/lcd/part-support" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
 <package hash="1742747857048" path="/poli/home/tmp/mcxn/lcd/part-support" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
-<package hash="1742747857048" path="/poli/home/tmp/apps-mcxn-workspace.mcu-24.12/test/part-support" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
-<package hash="1742747857048" path="/poli/home/tmp/apps-mcxn-workspace.mcu-24.12/test-all/part-support" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
-<package hash="1742747857048" path="/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-24.12/lcd/part-support" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
+<package hash="1742747857048" path="/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6/i2c/part-support" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
+<package hash="1751037227000" path="/usr/local/mcuxpressoide-25.6.136/ide/plugins/com.nxp.mcuxpresso.core.datamodels.resources_25.6.0.202501151204/override" schema="manifest-schema/sdk_manifest_v3.3.xsd"/>
+<package hash="1742747857048" path="/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6/test-all/part-support" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
+<package hash="1742747857048" path="/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-24.12-all/lcd/part-support" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
 <package hash="1742498332487" path="/poli/home/tmp/mcxn/mcuxpresso/SDKPackages/SDK_24_12_00_FRDM-MCXN947.zip" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
+<package hash="1742498332487" path="/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-24.12-all/mcuxpresso/SDKPackages/SDK_24_12_00_FRDM-MCXN947.zip" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
 <package hash="1742747857048" path="/poli/home/tmp/mcxn/test-all/part-support" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
-<package hash="1742747857048" path="/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-24.12/test/part-support" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
+<package hash="1742747857048" path="/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-24.12-all/test/part-support" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
+<package hash="1742747857048" path="/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6-all/test-all/part-support" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
+<package hash="1751037227000" path="/usr/local/mcuxpressoide-25.6.136/ide/plugins/com.nxp.mcuxpresso.core.datamodels.resources_25.6.0.202501151204/fragments" schema="manifest-schema/sdk_manifest_v3.3.xsd"/>
+<package hash="1742747857048" path="/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6-all/test/part-support" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
+<package hash="1742747857048" path="/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6/leds/part-support" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
 <package hash="1742747857048" path="/poli/home/tmp/mcxn/test/part-support" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
+<package hash="1742498332487" path="/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6-all/mcuxpresso/SDKPackages/SDK_24_12_00_FRDM-MCXN947.zip" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
+<package hash="1742747857048" path="/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6-all/leds/part-support" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
 <package hash="1742747857048" path="/poli/home/tmp/mcxn/leds/part-support" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
-<package hash="1742498332487" path="/poli/home/tmp/apps-mcxn-workspace.mcu-24.12/mcuxpresso/SDKPackages/SDK_24_12_00_FRDM-MCXN947.zip" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
+<package hash="1742747857048" path="/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6/test/part-support" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
+<package hash="1742747857048" path="/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-24.12-all/test-all/part-support" schema="manifest-schema/sdk_manifest_v3.15.xsd"/>
 </sdk-packages>

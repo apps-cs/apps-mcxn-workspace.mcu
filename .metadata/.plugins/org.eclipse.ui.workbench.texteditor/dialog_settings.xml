@@ -1,21 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="gp_rgb"/>
+		<item key="selection" value="PRINTF"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
-		<item key="wholeword" value="true"/>
+		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="printf"/>
+			<item value="_i2c_sda"/>
+			<item value="curfreq"/>
+			<item value="cur_freq"/>
+			<item value="delay"/>
+			<item value="wait"/>
+			<item value="demo_"/>
+			<item value="PTA"/>
+			<item value="g_but"/>
+			<item value="periode"/>
+			<item value="min"/>
+			<item value="_g_"/>
+			<item value="CTS_I2C_BASE"/>
 			<item value="rgb"/>
 			<item value="red"/>
-			<item value="PRINT"/>
-			<item value="t_pin_name"/>
-			<item value="pin_name"/>
-			<item value="port_pin_config_t"/>
 		</list>
 		<list key="replacehistory">
+			<item value="PRINTF"/>
+			<item value="CTS_I2C"/>
 			<item value="gp_rgb"/>
 			<item value="gp_red"/>
 			<item value="t_pin"/>
@@ -28,5 +39,9 @@
 		<item key="DIALOG_WIDTH" value="339"/>
 		<item key="DIALOG_HEIGHT" value="395"/>
 		<item key="DIALOG_FONT_NAME" value="1|Noto Sans|10.0|0|GTK|1|"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="724"/>
+		<item key="DIALOG_Y_ORIGIN" value="391"/>
 	</section>
 </section>

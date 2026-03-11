@@ -1,19 +1,32 @@
-18:27:37 **** Clean-only build of configuration Debug for project test-all ****
-make -r -j20 clean 
-rm -rf ./utilities/str/fsl_str.d ./utilities/str/fsl_str.o
-rm -rf ./utilities/debug_console/fsl_debug_console.d ./utilities/debug_console/fsl_debug_console.o
-rm -rf ./utilities/fsl_assert.d ./utilities/fsl_assert.o
-rm -rf ./startup/boot_multicore_slave.d ./startup/boot_multicore_slave.o ./startup/startup_mcxn947_cm33_core0.d ./startup/startup_mcxn947_cm33_core0.o
-rm -rf ./source/cpp_config.d ./source/cpp_config.o ./source/font8x8.d ./source/font8x8.o ./source/lcd_lib.d ./source/lcd_lib.o ./source/main-test-all.d ./source/main-test-all.o ./source/semihost_hardfault.d ./source/semihost_hardfault.o ./source/test-lcd.d ./source/test-lcd.o ./source/test-leds.d ./source/test-leds.o
-rm -rf ./mcxn-kit/mcxn-kit-delay.d ./mcxn-kit/mcxn-kit-delay.o ./mcxn-kit/mcxn-kit-digital-io.d ./mcxn-kit/mcxn-kit-digital-io.o ./mcxn-kit/mcxn-kit-ticker.d ./mcxn-kit/mcxn-kit-ticker.o
-rm -rf ./drivers/fsl_clock.d ./drivers/fsl_clock.o ./drivers/fsl_common.d ./drivers/fsl_common.o ./drivers/fsl_common_arm.d ./drivers/fsl_common_arm.o ./drivers/fsl_gpio.d ./drivers/fsl_gpio.o ./drivers/fsl_lpflexcomm.d ./drivers/fsl_lpflexcomm.o ./drivers/fsl_lpi2c.d ./drivers/fsl_lpi2c.o ./drivers/fsl_lpspi.d ./drivers/fsl_lpspi.o ./drivers/fsl_lpuart.d ./drivers/fsl_lpuart.o ./drivers/fsl_mrt.d ./drivers/fsl_mrt.o ./drivers/fsl_reset.d ./drivers/fsl_reset.o ./drivers/fsl_spc.d ./drivers/fsl_spc.o
-rm -rf ./device/system_MCXN947_cm33_core0.d ./device/system_MCXN947_cm33_core0.o
-rm -rf ./component/uart/fsl_adapter_lpuart.d ./component/uart/fsl_adapter_lpuart.o
-rm -rf ./component/serial_manager/fsl_component_serial_manager.d ./component/serial_manager/fsl_component_serial_manager.o ./component/serial_manager/fsl_component_serial_port_uart.d ./component/serial_manager/fsl_component_serial_port_uart.o
-rm -rf ./component/lists/fsl_component_generic_list.d ./component/lists/fsl_component_generic_list.o
-rm -rf ./board/board.d ./board/board.o ./board/clock_config.d ./board/clock_config.o ./board/peripherals.d ./board/peripherals.o ./board/pin_mux.d ./board/pin_mux.o
-rm -rf test-all.axf
+08:51:06 **** Incremental Build of configuration Debug for project test-all ****
+make -r -j20 all 
+Building file: ../source/main-test-all.cpp
+Building file: ../source/test-i2c.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DCPU_MCXN947VDF -DCPU_MCXN947VDF_cm33 -DCPU_MCXN947VDF_cm33_core0 -DSDK_DEBUGCONSOLE=1 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__NEWLIB__ -I"/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6-all/test-all/board" -I"/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6-all/test-all/mcxn-kit" -I"/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6-all/test-all/source" -I"/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6-all/test-all/drivers" -I"/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6-all/test-all/device" -I"/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6-all/test-all/utilities/debug_console" -I"/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6-all/test-all/component/uart" -I"/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6-all/test-all/utilities/debug_console/config" -I"/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6-all/test-all/component/serial_manager" -I"/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6-all/test-all/component/lists" -I"/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6-all/test-all/device/periph" -I"/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6-all/test-all/utilities" -I"/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6-all/test-all/CMSIS" -I"/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6-all/test-all/CMSIS/m-profile" -I"/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6-all/test-all/utilities/str" -O0 -fno-common -g3 -gdwarf-4 -Wall -c -ffunction-sections -fdata-sections -fno-builtin -fno-rtti -fno-exceptions -fmerge-constants -fmacro-prefix-map="../source/"= -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -D__NEWLIB__ -fstack-usage -specs=nano.specs -MMD -MP -MF"source/main-test-all.d" -MT"source/main-test-all.o" -MT"source/main-test-all.d" -o "source/main-test-all.o" "../source/main-test-all.cpp"
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DCPU_MCXN947VDF -DCPU_MCXN947VDF_cm33 -DCPU_MCXN947VDF_cm33_core0 -DSDK_DEBUGCONSOLE=1 -DSERIAL_PORT_TYPE_UART=1 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__NEWLIB__ -I"/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6-all/test-all/board" -I"/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6-all/test-all/mcxn-kit" -I"/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6-all/test-all/source" -I"/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6-all/test-all/drivers" -I"/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6-all/test-all/device" -I"/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6-all/test-all/utilities/debug_console" -I"/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6-all/test-all/component/uart" -I"/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6-all/test-all/utilities/debug_console/config" -I"/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6-all/test-all/component/serial_manager" -I"/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6-all/test-all/component/lists" -I"/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6-all/test-all/device/periph" -I"/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6-all/test-all/utilities" -I"/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6-all/test-all/CMSIS" -I"/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6-all/test-all/CMSIS/m-profile" -I"/poli/home/vyuka/apps/git/apps-mcxn-workspace.mcu-25.6-all/test-all/utilities/str" -O0 -fno-common -g3 -gdwarf-4 -Wall -c -ffunction-sections -fdata-sections -fno-builtin -fno-rtti -fno-exceptions -fmerge-constants -fmacro-prefix-map="../source/"= -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -D__NEWLIB__ -fstack-usage -specs=nano.specs -MMD -MP -MF"source/test-i2c.d" -MT"source/test-i2c.o" -MT"source/test-i2c.d" -o "source/test-i2c.o" "../source/test-i2c.cpp"
+Finished building: ../source/main-test-all.cpp
+ 
+Finished building: ../source/test-i2c.cpp
+ 
+Building target: test-all.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -Xlinker -Map="test-all.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -T test-all_Debug.ld -o "test-all.axf" ./utilities/str/fsl_str.o  ./utilities/debug_console/fsl_debug_console.o  ./utilities/fsl_assert.o  ./startup/boot_multicore_slave.o ./startup/startup_mcxn947_cm33_core0.o  ./source/cpp_config.o ./source/font8x8.o ./source/i2c-lib.o ./source/lcd_lib.o ./source/main-test-all.o ./source/semihost_hardfault.o ./source/si4735-lib.o ./source/test-i2c.o ./source/test-lcd.o ./source/test-leds.o  ./mcxn-kit/mcxn-kit-delay.o ./mcxn-kit/mcxn-kit-digital-io.o ./mcxn-kit/mcxn-kit-ticker.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_common_arm.o ./drivers/fsl_gpio.o ./drivers/fsl_lpflexcomm.o ./drivers/fsl_lpi2c.o ./drivers/fsl_lpspi.o ./drivers/fsl_lpuart.o ./drivers/fsl_mrt.o ./drivers/fsl_reset.o ./drivers/fsl_spc.o  ./device/system_MCXN947_cm33_core0.o  ./component/uart/fsl_adapter_lpuart.o  ./component/serial_manager/fsl_component_serial_manager.o ./component/serial_manager/fsl_component_serial_port_uart.o  ./component/lists/fsl_component_generic_list.o  ./board/board.o ./board/clock_config.o ./board/peripherals.o ./board/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+  PROGRAM_FLASH0:       32192 B         1 MB      3.07%
+  PROGRAM_FLASH1:           0 B         1 MB      0.00%
+            SRAM:       10676 B       384 KB      2.72%
+           SRAMX:           0 B        96 KB      0.00%
+           SRAMH:           0 B        32 KB      0.00%
+         USB_RAM:           0 B         4 KB      0.00%
+Finished building target: test-all.axf
+ 
+Performing post-build steps
+arm-none-eabi-size "test-all.axf"; # arm-none-eabi-objcopy -v -O binary "test-all.axf" "test-all.bin" ; # checksum -p MCXN947 -d "test-all.bin";
+   text	   data	    bss	    dec	    hex	filename
+  32024	    168	  10508	  42700	   a6cc	test-all.axf
  
 
-18:27:37 Build Finished. 0 errors, 0 warnings. (took 193ms)
+08:51:07 Build Finished. 0 errors, 0 warnings. (took 787ms)
 
